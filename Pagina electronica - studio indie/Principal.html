@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dani Games Studio – Videojuegos</title>
+    <link rel="icon" href="Imagenes/Logotipo.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: grey;
+            color: #111827;
+        }
+
+        header {
+            background: #111;
+            border-bottom: 1px solid #d1d5db;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title {
+            color: white;
+        }
+
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+
+        .btn {
+            background: linear-gradient(to right, white, black);
+            padding: 10px 18px;
+            color: #111827;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        /* HERO */
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 70px 40px;
+            background: #2c2c2c;
+        }
+
+        .hero-text {
+            max-width: 500px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+
+        .hero-buttons a {
+            margin-right: 10px;
+            padding: 10px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .hero-buttons .outline {
+            border: 1px solid black;
+            color: black;
+        }
+
+        .sobre-nosotros {
+        padding: 80px 20px;
+        background-color: #111; /* Fondo oscuro profesional */
+        color: #fff;
+        text-align: center;
+        }
+
+    .sobre-nosotros .container {
+    max-width: 800px;
+    margin: 0 auto;
+    }
+
+    .logo-sobre-nosotros {
+    width: 220px;   /* tamaño mediano */
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.sobre-nosotros h2 {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sobre-nosotros p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+        /* FEATURED GAMES */
+        .section {
+            padding: 60px 40px;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .game-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .game-img {
+            width: 100%;
+            height: 160px;
+            background: #d1d5db;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .game-card h3 {
+            margin: 0 0 8px 0;
+        }
+
+        .game-card p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #111827;
+            color: white;
+            padding: 40px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <strong style="font-size: 18px;" class="title">Dani Games Studio</strong>
+
+        <nav>
+            <a href="#juegos">Juegos</a>
+            <a href="#sobre-nosotros">Sobre Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <a class="btn" href="#contacto">Contáctanos</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Creando experiencias de juego memorables</h1>
+            <p>Desarrollamos videojuegos con mecánicas pulidas, arte distintivo y narrativa profunda.</p>
+
+            <div class="hero-buttons">
+                <a href="#juegos" class="btn">Ver juegos</a>
+                <a href="#sobre-nosotros" class="outline">Nuestra filosofía</a>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <div style="width: 420px; height: 260px; background: linear-gradient(135deg, white, black); border-radius: 18px;"></div>
+        </div>
+
+
+    </section>
+
+    <!-- JUEGOS DESTACADOS -->
+    <section id="juegos" class="section">
+        <h2>Juegos destacados</h2>
+
+        <div class="game-grid">
+            <div class="game-card">
+                <div class="game-img"></div>
+                <h3>Eclipse Protocol</h3>
+                <p>Sci-Fi táctico con sigilo y decisiones emergentes.</p>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img"></div>
+                <h3>Aqua Forge</h3>
+                <p>Supervivencia en un océano vivo en constante evolución.</p>
+            </div>
+
+            <div class="game-card">
+                <div class="game-img"></div>
+                <h3>Neon Drift</h3>
+                <p>Carreras arcade con personalización profunda.</p>
+            </div>
+        </div>
+    </section>
+
+        <section id="sobre-nosotros" class="sobre-nosotros">
+    <div class="container">
+        <img src="Imagenes/Studio.png" alt="Logo Dani Games" class="logo-sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            En Dani Games somos un estudio indie enfocado en crear experiencias innovadoras,
+            combinando creatividad, tecnología y pasión por el desarrollo de videojuegos.
+        </p>
+    </div>
+</section>
+
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <h3>Dani Games Studio</h3>
+        <p>Contáctanos para colaboraciones o contratación de servicios.</p>
+        <p>Telefono: </p>
+        <p>Email: danielandres2012@gmail.com</p>
+    </footer>
+
+</body>
+</html>
